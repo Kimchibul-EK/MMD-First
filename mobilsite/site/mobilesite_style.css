@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat-VariableFont_wght.woff2) format("woff2");
+  font-weight: normal bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat-Italic-VariableFont_wght.woff2)
+    format("woff2");
+  font-weight: normal bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "LibreFranklin";
+  src: url(../assets/fonts/LibreFranklin-VariableFont_wght.woff2)
+    format("woff2");
+  font-weight: normal bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LibreFranklin";
+  src: url(../assets/fonts/LibreFranklin-Italic-VariableFont_wght.woff2)
+    format("woff2");
+  font-weight: normal bold;
+  font-style: italic;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin: 0.6rem 0;
+}
+
+p {
+  font-family: "LibreFranklin", sans-serif;
+  font-weight: normal;
+  line-height: 1.6em;
+}
+
+aside ul {
+  list-style: none;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.by_line {
+  font-size: 0.8em;
+  color: rgb(124, 167, 255);
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+body {
+  background-color: #404040;
+  color: #ebebeb;
+  padding: 1rem;
+}
+
+ul {
+  font-family: "LibreFranklin", sans-serif;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* gør den responsiv */
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0.7rem 0.2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ebebeb;
+  padding: 0.5rem 1rem;
+  background: #555;
+  border-radius: 6px;
+}
+
+nav ul li a:hover {
+  background: #777;
+}
+
+main {
+  margin: 1rem 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.6rem auto;
+}
+
+section {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  background: #ebebeb;
+  color: #141414;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  background: #ebebeb;
+  color: #141414;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+}
