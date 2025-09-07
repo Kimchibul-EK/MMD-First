@@ -28,6 +28,11 @@
   font-style: italic;
 }
 
+a {
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
 h1,
 h2,
 h3 {
