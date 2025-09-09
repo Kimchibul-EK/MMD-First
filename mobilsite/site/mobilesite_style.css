@@ -54,12 +54,6 @@ a {
   overflow-wrap: break-word;
 }
 
-aside ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .by_line {
   font-size: 0.8em;
   color: rgb(124, 167, 255);
@@ -95,6 +89,12 @@ aside {
   color: #141414;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 footer {
