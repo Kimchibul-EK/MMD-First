@@ -49,6 +49,11 @@ p {
   line-height: 1.6em;
 }
 
+a {
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
 aside ul {
   list-style: none;
   margin: 0;
