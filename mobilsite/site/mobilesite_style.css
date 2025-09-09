@@ -84,6 +84,12 @@ section {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+a {
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+
 aside {
   padding: 0.5rem;
   background: #ebebeb;
