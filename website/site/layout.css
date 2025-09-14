@@ -1,0 +1,380 @@
+/*----------------------------------------------------------------*/
+/* Universelle */
+/*----------------------------------------------------------------*/
+body {
+  margin: auto;
+  padding: 4em 2em 2.5em 2em;
+  max-width: 1200px;
+}
+
+@media (max-width: 762px) and (min-width: 485px) {
+  body {
+    padding-top: 8em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+
+@media (max-width: 484px) and (min-width: 0px) {
+  body {
+    padding-top: 12em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+main {
+  margin: 1em auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  max-width: 65ch;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.order {
+  grid-column: 1 / 1;
+  grid-row: 1;
+}
+
+/*----------------------------------------------------------------*/
+/* Menu */
+/*----------------------------------------------------------------*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+}
+
+@media (max-width: 762px) and (min-width: 485px) {
+  header {
+    height: 8em;
+  }
+}
+
+@media (max-width: 484px) and (min-width: 0px) {
+  header {
+    height: 12em;
+  }
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+}
+
+.nav-list li {
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.nav-list li a {
+  display: block;
+  text-decoration: none;
+  gap: 1rem;
+  padding: 1em;
+}
+
+/*----------------------------------------------------------------*/
+/* Footer */
+/*----------------------------------------------------------------*/
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5em;
+}
+
+/*----------------------------------------------------------------*/
+/* index.html */
+/*----------------------------------------------------------------*/
+
+@media (min-width: 601px) {
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+  }
+
+  .index .grid_1-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+
+  .index dt:nth-child(3) {
+    grid-column: 2 / -1;
+    grid-row: 1;
+  }
+
+  .index dt:nth-child(7) {
+    grid-column: 2 / -1;
+    grid-row: 3;
+  }
+
+  .index dd {
+    margin: 0;
+  }
+
+  .index dt {
+    margin-bottom: 0;
+  }
+
+  .index img {
+    width: 100%;
+    aspect-ratio: 6.5 / 5;
+    min-width: 200px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+.index dt {
+  margin-bottom: 0.5em;
+}
+.index dd {
+  margin: 0 0 1em 0;
+}
+@media (max-width: 600px) {
+  .index h2 {
+    margin-top: 1rem;
+  }
+}
+
+/*----------------------------------------------------------------*/
+/* min_computer.html */
+/*----------------------------------------------------------------*/
+.min_computer img {
+  width: 100%;
+  height: 100%;
+  min-width: 250px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 601px) {
+  .min_computer .grid_1-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+}
+
+.min_computer dt {
+  margin-bottom: 0.5em;
+}
+.min_computer dd {
+  margin: 0 0 1em 0;
+}
+
+@media (max-width: 600px) {
+  .min_computer h2 {
+    margin-top: 1rem;
+  }
+}
+
+/*----------------------------------------------------------------*/
+/* operativsystemer.html */
+/*----------------------------------------------------------------*/
+@media (min-width: 893px) {
+  .grid_5-3 {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 4rem;
+  }
+
+  .grids_5-3 div h2 {
+    margin-top: 1em;
+  }
+
+  .grid_5-3 img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    min-width: 200px;
+    max-width: 100%;
+  }
+
+  .grid_2-3 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2em;
+  }
+
+  .grid_2-3 img {
+    object-fit: contain;
+    border-radius: 0em;
+  }
+
+  .grid_3-2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2em;
+    padding-top: 2rem;
+  }
+
+  .grid_3-2 img {
+    object-fit: cover;
+  }
+}
+
+.margin_top {
+  margin-top: 1rem;
+}
+
+@media (max-width: 892px) {
+  .grid_5-3 img {
+    width: 100%;
+    aspect-ratio: 6.5 / 5;
+    min-width: 200px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .grid_2-3 img {
+    object-fit: contain;
+  }
+}
+
+/*----------------------------------------------------------------*/
+/* komponenter.html */
+/*----------------------------------------------------------------*/
+@media (min-width: 601px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+  }
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .flex_col h2 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-top: 1rem;
+  }
+
+  .flex_col h3 {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .flex_col p {
+    flex-grow: 0;
+    flex-shrink: 1;
+  }
+
+  .flex_col img {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 15rem;
+  }
+
+  .flex_spacer {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .komponenter h2 {
+    margin-top: 1rem;
+  }
+
+  .komponenter img {
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    min-width: 250px;
+    max-width: 100%;
+
+    aspect-ratio: 6.5 / 5;
+    object-fit: cover;
+  }
+}
+
+/*----------------------------------------------------------------*/
+/* galleri.html */
+/*--------------------------------s--------------------------------*/
+@media (min-width: 601px) {
+  .galleri .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+  }
+
+  .grid_1-1-1-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .grid_1-1-1-1 img:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .grid_1-1-1-1 img:nth-child(4) {
+    grid-column: span 2;
+  }
+
+  .grid_1-1-1-1 img:last-child {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+
+  .grid_1-1-1-1 > * {
+    grid-column: span 2;
+  }
+
+  .grid_1-1-1-1 > *:nth-child(2),
+  .grid_1-1-1-1 > *:nth-child(3) {
+    grid-column: span 1;
+  }
+
+  .galleri h2 {
+    margin-top: 1rem;
+  }
+
+  .galleri img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
